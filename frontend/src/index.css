@@ -1,0 +1,125 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-primary: #173F2A;
+    --color-primary-dark: #0f2b1d;
+    --color-dark-green: #234D32;
+    --color-sage: #9BAE91;
+    --color-soft-sage: #DCE5D4;
+    --color-cream: #F7F3E8;
+    --color-warm-beige: #EDE8DA;
+    --color-sand: #E5DFC9;
+  }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #F7F3E8;
+    color: #173F2A;
+  }
+
+  h1, h2, .font-display, .serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+
+  .font-devanagari {
+    font-family: 'Noto Sans Devanagari', 'Inter', sans-serif;
+  }
+}
+
+/* Design theme utility classes */
+.serif {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+.bg-forest {
+  background-color: #173F2A;
+}
+
+.text-forest {
+  color: #173F2A;
+}
+
+.bg-sage {
+  background-color: #9BAE91;
+}
+
+.text-sage {
+  color: #9BAE91;
+}
+
+.bg-cream {
+  background-color: #F7F3E8;
+}
+
+.bg-soft-sage {
+  background-color: #DCE5D4;
+}
+
+.border-sage {
+  border-color: #9BAE91;
+}
+
+.chat-bubble-bot {
+  background-color: white;
+  border-radius: 2px 20px 20px 20px;
+  box-shadow: 0 2px 8px rgba(23, 63, 42, 0.05);
+}
+
+.chat-bubble-user {
+  background-color: #173F2A;
+  color: white;
+  border-radius: 20px 20px 2px 20px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3E8;
+}
+::-webkit-scrollbar-thumb {
+  background: #9BAE91;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #234D32;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+@keyframes breatheCircle {
+  0%, 100% {
+    transform: scale(0.85);
+    background-color: #DCE5D4;
+  }
+  50% {
+    transform: scale(1.18);
+    background-color: #9BAE91;
+  }
+}
+
+.animate-breathe {
+  animation: breatheCircle 8s ease-in-out infinite;
+}

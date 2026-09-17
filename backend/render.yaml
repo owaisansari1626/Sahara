@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: sahara-mental-health-api
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn backend.main:app --host 0.0.0.0 --port $PORT
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.10.12
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ADMIN_SECRET_KEY
+        generateValue: true
+      - key: DATABASE_FILE
+        value: backend/sahara.db

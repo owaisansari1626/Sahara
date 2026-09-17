@@ -1,0 +1,8 @@
+{
+  "name": "Sahara (सहारा)",
+  "description": "A trust-driven mental health access system for Indian college students. Zero-identity entry, peer-first support, and institutionally-independent privacy.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
