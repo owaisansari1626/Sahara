@@ -6,7 +6,7 @@ Welcome to the Sahara project! This repository contains both the frontend and ba
 - `frontend/`: The frontend application
 - `backend/`: The backend application
 
-# Sahara (सहारा) — Mental Health
+# Sahara (सहारा) — Mental Health Support System
 
 An empathetic, confidential mental health and peer support backend designed specifically for Indian college students.
 
